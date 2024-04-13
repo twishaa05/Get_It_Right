@@ -13,6 +13,8 @@ dependencies:
   flutter:
     sdk: flutter
 
+
+
   # Utility Packages
   http: ^1.1.0
   intl: ^0.18.1
@@ -42,6 +44,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  url_launcher: ^6.0.9
 
   flutter_lints: ^2.0.0
 
@@ -51,16 +54,28 @@ flutter:
 
   #--------------- LOCAL ASSETS ------------------#
   assets:
-    - assets/logos/
-    - assets/icons/brands/
-    - assets/images/content/
-    - assets/images/banners/
-    - assets/images/reviews/
-    - assets/images/products/
-    - assets/icons/categories/
-    - assets/images/animations/
-    - assets/icons/payment_methods/
-    - assets/images/on_boarding_images/
+    - assets/icons/artgalleryicon.PNG
+    - assets/icons/helpicon.PNG
+    - assets/icons/howtoplayicon.PNG
+    - assets/icons/libraryicon.PNG
+    - assets/icons/carticon.PNG
+    - assets/icons/participation.PNG
+    - assets/icons/riseandshine.PNG
+    - assets/icons/shellofsurvival.PNG
+    - assets/icons/shieldofjustice.PNG
+    - assets/getitrightlogofinal.PNG
+    - assets/homepageheader.PNG
+    - assets/icons/watchbutton.PNG
+    - assets/icons/playbutton.PNG
+    - assets/comic/comic1.jpg
+    - assets/comic/comic2.jpg
+    - assets/comic/comic3.jpg
+    - assets/comic/comic4.jpg
+    - assets/comic/comic5.jpg
+    - assets/comic/comic6.jpg
+    - assets/comic/comic7.jpg
+    - assets/comic/comic8.jpg
+    - assets/comic/comic9.jpg
 
   #--------------- LOCAL FONTS ------------------#
   fonts:

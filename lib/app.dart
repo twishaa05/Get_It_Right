@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:t_store/utils/constants/text_strings.dart';
 import 'package:t_store/utils/theme/theme.dart';
@@ -8,33 +8,71 @@ import 'package:t_store/utils/theme/theme.dart';
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      title: TTexts.appName,
-      themeMode: ThemeMode.system,
-      theme: TAppTheme.lightTheme,
-      darkTheme: TAppTheme.darkTheme,
-      debugShowCheckedModeBanner: false,
-      // initialBinding: GeneralBindings(),
-      home: const Scaffold(
-        body: Center(
-          child: Text('Awesome! 🎊 Project Structure is set up and running. \n Happy T Coding 🎊', textAlign: TextAlign.center,),
-        ),
-      ),
-    );
+    return Scaffold(
+
+   );
   }
 }*/
 
-class App extends StatefulWidget {
-  const App({super.key});
-
-  @override
-  State<App> createState() => _AppState();
-}
-
-class _AppState extends State<App> {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      title: 'Get Right',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const Home(),
+    );
   }
 }
+
+class Home extends StatefulWidget {
+  const Home({super.key});
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  int selectedIndex=0;
+  void onTap(int index){
+    setState(() {
+      selectedIndex = index;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Text('Get It Right'),
+        ),
+      body: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Image.asset('assets/homepageheader.PNG')
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Image.asset('assets/row_image.PNG')
+            ],
+          )
+        ],
+        bottomNavigationBar: BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(
+                icon: Image.asset('assets/icons/howtoplayicon.PNG'))
+          ],
+        ),
+      )
+
+    );
+  }
+}
+*/
 
