@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:t_store/comicstrip.dart';
+import 'package:t_store/helpline.dart';
 import 'package:t_store/howtoplay.dart';
 import 'package:t_store/library1.dart';
 import 'package:t_store/modules.dart';
@@ -114,7 +115,15 @@ class HomePage extends StatelessWidget {
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: Image.asset('assets/icons/helpicon.PNG', height: 65), // Fixed loading by correcting the path
+            icon: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HelplineScreen()),
+                );
+              },
+              child: Image.asset('assets/icons/helpicon.PNG', height: 65),
+            ),
             label: '',
           ),
         ],
