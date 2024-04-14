@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
+import 'package:t_store/main.dart';
 
 class HowToPlay extends StatelessWidget {
   const HowToPlay({super.key});
@@ -7,6 +8,25 @@ class HowToPlay extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue[200],
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, size: 30, color: Colors.black),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => HomePage()),
+            );// Handle back button press
+          },
+        ),
+        iconTheme: const IconThemeData(color: Colors.black), // Set color of all icons
+        title: const Text(
+          'Get It Right',
+          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold,
+              fontSize: 25,
+              fontFamily: 'poppins'),
+        ), // Set color and font weight of the title text
+      ),
       body: Scrollbar(
         child: SingleChildScrollView(
             child: Padding(
@@ -42,7 +62,7 @@ class HowToPlay extends StatelessWidget {
                             fontFamily: 'Poppins'),
                       ),
                       _gap(),
-                      Image.asset('assets/icons/participation.PNG'),
+                      Image.asset('assets/icons/rightpiece.jpeg'),
                       const ReadMoreText(
                         'You will have a special puzzle with a certain picture, that is still unknown. It is divided into small pieces that fit in the main grid. '
                             'Arrange the Picture: Its your job now to slide the pieces around to try to put the picture back together. Move one piece at a time to make the picture complete again. Keep Trying: It might take a few tries to get it right, but keep going! Each move gets you closer to solving the puzzle. Celebrate: When you have put all the pieces in the right place and the picture looks perfect, celebrate your success!',
@@ -68,7 +88,7 @@ class HowToPlay extends StatelessWidget {
                             fontFamily: 'Poppins'),
                       ),
                       _gap(),
-                      Image.asset('assets/icons/participation.PNG'),
+                      Image.asset('assets/icons/taboohowtoplay.jpeg'),
                       const ReadMoreText(
                         "Gather Around: Sit with your friends or family in a circle. Chose a partner and start the game"
                             "Each card has a special word about kids' rights.\n"

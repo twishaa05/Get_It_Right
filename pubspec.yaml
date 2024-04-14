@@ -44,9 +44,10 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  url_launcher: ^6.0.9
+  
 
   flutter_lints: ^2.0.0
+  url_launcher: ^6.0.12
 
 
 flutter:
@@ -61,7 +62,6 @@ flutter:
     - assets/icons/carticon.PNG
     - assets/icons/participation.PNG
     - assets/icons/riseandshine.PNG
-    - assets/icons/shellofsurvival.PNG
     - assets/icons/shieldofjustice.PNG
     - assets/getitrightlogofinal.PNG
     - assets/homepageheader.PNG
@@ -76,6 +76,48 @@ flutter:
     - assets/comic/comic7.jpg
     - assets/comic/comic8.jpg
     - assets/comic/comic9.jpg
+    - assets/cart/cartpouch.jpg
+    - assets/cart/cartbag.jpg
+    - assets/cart/cartmug.jpg
+    - assets/cart/cartdiary.jpg
+    - assets/icons/participationintroimage.png
+    - assets/icons/survivalintro.PNG
+    - assets/icons/survivorsanctuary.PNG
+    - assets/icons/taboo1.jpeg
+    - assets/icons/taboo2.jpeg
+    - assets/icons/taboo3.jpeg
+    - assets/icons/taboo4.jpeg
+    - assets/icons/taboo5.jpeg
+    - assets/icons/taboo6.jpeg
+    - assets/icons/taboo7.jpeg
+    - assets/icons/taboo8.jpeg
+    - assets/icons/taboo9.jpeg
+    - assets/icons/taboocross.PNG
+    - assets/icons/tabooskip.PNG
+    - assets/icons/tabootick.PNG
+    - assets/puzzle/birthright0.jpg
+    - assets/puzzle/birthright1.jpg
+    - assets/puzzle/birthright2.jpg
+    - assets/puzzle/birthright3.jpg
+    - assets/puzzle/birthright4.jpg
+    - assets/puzzle/birthright5.jpg
+    - assets/puzzle/birthright6.jpg
+    - assets/puzzle/birthright7.jpg
+    - assets/puzzle/birthright8.jpg
+    - assets/icons/rightpiece.jpeg
+    - assets/icons/taboohowtoplay.jpeg
+    - assets/icons/artgalleryicon.PNG
+    - assets/icons/carticon.PNG
+    - assets/icons/helpicon.PNG
+    - assets/icons/howtoplayicon.PNG
+    - assets/icons/libraryicon.PNG
+    - assets/icons/participation.PNG
+    - assets/gamelistimg/comicbutton.PNG
+    - assets/gamelistimg/dungeonbutton.PNG
+    - assets/gamelistimg/rightpiece.jpeg
+    - assets/gamelistimg/rightpiecebutton.PNG
+    - assets/gamelistimg/scenariosbutton.PNG
+    - assets/gamelistimg/taboogamebutton.PNG
 
   #--------------- LOCAL FONTS ------------------#
   fonts:

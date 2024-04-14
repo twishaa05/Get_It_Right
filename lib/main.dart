@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:t_store/comicstrip.dart';
 import 'package:t_store/howtoplay.dart';
+import 'package:t_store/library1.dart';
 import 'package:t_store/modules.dart';
+import 'package:t_store/shoppingcart.dart';
+import 'package:t_store/videosyt.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 void main() {
@@ -52,7 +55,10 @@ class HomePage extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    _launchURL('https://www.youtube.com/watch?v=HCYLdtug8sk');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => VideoPage()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     primary: Colors.transparent, // Remove button background color
@@ -82,24 +88,29 @@ class HomePage extends StatelessWidget {
             ),
             label: '',
           ),
+
           BottomNavigationBarItem(
             icon: GestureDetector(
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ComicStrip()),
+                  MaterialPageRoute(builder: (context) => ChildProtectionUI()),
                 );
               },
-              child: Image.asset('assets/icons/artgalleryicon.PNG', height: 65),
-            ), // Fixed loading by correcting the path
+              child: Image.asset('assets/icons/libraryicon.PNG', height: 65),
+            ),
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: Image.asset('assets/icons/libraryicon.PNG', height: 65), // Fixed loading by correcting the path
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Image.asset('assets/icons/carticon.PNG', height: 65), // Fixed loading by correcting the path
+            icon: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const shoppingcart()),
+                );
+              },
+              child: Image.asset('assets/icons/carticon.PNG', height: 65),
+            ),
             label: '',
           ),
           BottomNavigationBarItem(
